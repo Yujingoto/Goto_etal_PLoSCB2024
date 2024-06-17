@@ -1,7 +1,7 @@
 # Selective Consistency of Recurrent Neural Networks Induced by Plasticity as a Mechanism of Unsupervised Perceptual Learning
 This repository contains the Python code for the paper:
 
-Goto, Kitajo, "Selective consistency of recurrent neural networks induced by plasticity as a mechanism of unsupervised perceptual learning", 2024, PLoS Computational Biology.
+Goto, Kitajo, 2024. "Selective consistency of recurrent neural networks induced by plasticity as a mechanism of unsupervised perceptual learning". PLoS Computational Biology.
 
 ## Table of Contents
 
