@@ -12,7 +12,7 @@ Goto, Kitajo, 2024. "Selective consistency of recurrent neural networks induced 
 
 ## Introduction
 
-This repository provides the implementation of the experiments and analyses described in the paper. The code is freely available for academic and research purposes.
+This repository implements the simulation described in the paper. The code is freely available for academic and research purposes.
 
 ## Python Environment
 - Python version  
@@ -32,8 +32,8 @@ To run the simulation, use the following command:
     python main.py
     ```
 
-and then you will get "data_{pred_num}_hebb.csv" and "data_{pred_num}_nohebb.csv". 
-You can see the network's output time series of hebbian and non-hebbian network, respectively in these data files.
+and then you will get "data_{pred_num}_ hebb.csv" and "data_{pred_num}_nohebb.csv". 
+These data files show the output time series of the Hebbian and non-Hebbian networks, respectively.
 
 ## Code Structure
 
