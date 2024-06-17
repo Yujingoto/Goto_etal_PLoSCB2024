@@ -9,17 +9,10 @@ Goto, Kitajo, "Selective consistency of recurrent neural networks induced by pla
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
-- [Examples](#examples)
-- [License](#license)
-- [Citation](#citation)
 
 ## Introduction
 
 This repository provides the implementation of the experiments and analyses described in the paper. The code is freely available for academic and research purposes.
-
-## Installation
-
-To run the code, you need Python 3.9 or higher. Follow the steps below to set up the environment:
 
 ## Python Environment
 Python version
