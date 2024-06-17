@@ -28,7 +28,7 @@ sys.version_info(major=3, minor=9, micro=13, releaselevel='final', serial=0)
 ## Usage
 
 To run the simulation, use the following command:
-    ```bash
+    ```
     python main.py
     ```
 
