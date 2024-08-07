@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 ################################################################################
 # A plastic RNN based on ESN written by Yujin Goto, last edited 2024.04.22.
+# This code is inspired by codes from the book "リザバーコンピューティング" by Gohei Tanaka, Ryosho Nakane, and Akira Hirose.
+# ISBN: 978-4-627-85531-1
 ################################################################################
 
 
@@ -40,9 +42,9 @@ class Input:
 # In[33]:
 
 
-# リザバー
+# Reservoir
 class Reservoir:
-    # リカレント結合重み行列Wの初期化
+    # initialize recurrent network's connection matrix
     def __init__(self, N_x, density, rho, activation_func, leaking_rate, learning_rate,
                  seed):
         '''
@@ -115,7 +117,6 @@ class Reservoir:
         self.x = (1.0 - self.alpha) * self.x                  + self.alpha * self.activation_func(cp.dot(self.W, self.x)                  + x_in)
         self.x += noise_level * cp.random.randn(self.N_x)
                 
-        #self.W += oja(self.W, self.x, self.W.shape[0], self.learning_rate, self.W_diff, size=(self.W.shape[0] * self.W.shape[1]))*(self.W!=0) # 引数に出力も追加
         self.W += oja(self.W, self.x, self.W.shape[0], self.learning_rate, self.W_diff, size=(self.W.shape[0] * self.W.shape[1]))
         
         return self.x, self.W
@@ -177,9 +178,6 @@ class Output:
         beta: Normalization param
         '''
         self.Wout -= eta * (grad + beta * self.Wout)
-        #self.Wout -= eta * (grad + beta *self.Wout)
-        #for n in range(len(Wout)):
-        #    if Wout[n] > 1
     
     def getWout(self):
         ave = cp.mean(cp.abs(self.Wout))
