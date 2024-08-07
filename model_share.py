@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-################################################################################
+########################################################################################################################################
 # A plastic RNN based on ESN written by Yujin Goto, last edited 2024.04.22.
-# This code is inspired by codes from the book "リザバーコンピューティング" by Gohei Tanaka, Ryosho Nakane, and Akira Hirose.
+# The base of this code is inspired by the book "リザバーコンピューティング" (森北出版) by Gohei Tanaka, Ryosho Nakane, and Akira Hirose.
 # ISBN: 978-4-627-85531-1
-################################################################################
+########################################################################################################################################
 
 
 import numpy as np
