@@ -152,7 +152,7 @@ sp_hebb=np.zeros(len(rho_list))
 sp_nohebb = np.zeros(len(rho_list))
 
 ########################################################################################
-# 1. Generate three N and RN, one RefN and RefRN
+# 1. Generate Ns, RNs, one RefN and one RefRN
 # 2. Train reservoir to predict one step ahead time series data of input signals above
 # 3. Test and plot the performance of trained reservoir with RefRN,RefN, new N, new RN stim.
 ##########################################################################################
